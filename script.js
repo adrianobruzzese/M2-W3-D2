@@ -45,6 +45,8 @@ deleteButton.addEventListener(`click`, (e) => {
 
 // COUNTER
 
+let counter=sessionStorage.getItem(`timer`)!=null ? sessionStorage.getItem(`timer`):0;
+
 let counter = setInterval(() => {
   counter++;
   sessionStorage.setItem(`timer`, counter);
